@@ -21,27 +21,38 @@ type probeFlowMetrics struct {
 		Protocol uint8
 		_        [3]byte
 	}
-	PacketsIn    uint32
-	PacketsOut   uint32
-	BytesIn      uint64
-	PayloadIn    uint64
-	BytesOut     uint64
-	PayloadOut   uint64
-	TsStart      uint64
-	TsCurrent    uint64
-	FinCounter   uint8
-	FlowClosed   uint8
-	SynOrUdpToRb bool
-	Evict        bool
-	_            [4]byte
+	PacketsIn  uint32
+	PacketsOut uint32
+	BytesIn    uint64
+	BytesOut   uint64
+	TsStart    uint64
+	TsCurrent  uint64
+	FinCounter uint8
+	AckCounter uint8
+	_          [6]byte
+}
+
+type probeFlowStats struct {
+	FlowTuple struct {
+		A_ip     struct{ In6U struct{ U6Addr8 [16]uint8 } }
+		B_ip     struct{ In6U struct{ U6Addr8 [16]uint8 } }
+		A_port   uint16
+		B_port   uint16
+		Protocol uint8
+		_        [3]byte
+	}
+	Inpps   uint64
+	Outpps  uint64
+	Inbpp   uint64
+	Outbpp  uint64
+	Inboutb uint64
+	Inpoutp uint64
 }
 
 type probeGlobalMetrics struct {
 	TotalProcessedpackets uint64
-	TotalTcpudppackets    uint64
 	TotalTcppackets       uint64
 	TotalUdppackets       uint64
-	TotalFlows            uint64
 	TotalTcpflows         uint64
 	TotalUdpflows         uint64
 }
@@ -94,10 +105,9 @@ type probeProgramSpecs struct {
 //
 // It can be passed ebpf.CollectionSpec.Assign.
 type probeMapSpecs struct {
+	Flowstats     *ebpf.MapSpec `ebpf:"flowstats"`
 	Flowstracker  *ebpf.MapSpec `ebpf:"flowstracker"`
 	Globalmetrics *ebpf.MapSpec `ebpf:"globalmetrics"`
-	Pipe          *ebpf.MapSpec `ebpf:"pipe"`
-	Userconfig    *ebpf.MapSpec `ebpf:"userconfig"`
 }
 
 // probeObjects contains all objects after they have been loaded into the kernel.
@@ -119,18 +129,16 @@ func (o *probeObjects) Close() error {
 //
 // It can be passed to loadProbeObjects or ebpf.CollectionSpec.LoadAndAssign.
 type probeMaps struct {
+	Flowstats     *ebpf.Map `ebpf:"flowstats"`
 	Flowstracker  *ebpf.Map `ebpf:"flowstracker"`
 	Globalmetrics *ebpf.Map `ebpf:"globalmetrics"`
-	Pipe          *ebpf.Map `ebpf:"pipe"`
-	Userconfig    *ebpf.Map `ebpf:"userconfig"`
 }
 
 func (m *probeMaps) Close() error {
 	return _ProbeClose(
+		m.Flowstats,
 		m.Flowstracker,
 		m.Globalmetrics,
-		m.Pipe,
-		m.Userconfig,
 	)
 }
 

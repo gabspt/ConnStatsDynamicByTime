@@ -1,0 +1,94 @@
+2024/07/08 20:46:08 Starting up the probe at interface enp0s8
+2024/07/08 20:46:09 Eviction
+2024/07/08 20:46:10 Eviction
+2024/07/08 20:46:11 Eviction
+2024/07/08 20:46:12 Eviction
+2024/07/08 20:46:13 Eviction
+2024/07/08 20:46:14 Eviction
+2024/07/08 20:46:15 Eviction
+2024/07/08 20:46:16 Eviction
+2024/07/08 20:46:17 Eviction
+2024/07/08 20:46:18 Eviction
+2024/07/08 20:46:19 Eviction
+2024/07/08 20:46:20 Eviction
+2024/07/08 20:46:21 Eviction
+2024/07/08 20:46:22 Eviction
+2024/07/08 20:46:23 Eviction
+2024/07/08 20:46:24 Eviction
+2024/07/08 20:46:25 Eviction
+2024/07/08 20:46:26 Eviction
+2024/07/08 20:46:27 Eviction
+2024/07/08 20:46:28 Eviction
+2024/07/08 20:46:29 Eviction
+2024/07/08 20:46:30 Eviction
+2024/07/08 20:46:31 Eviction
+2024/07/08 20:46:32 Eviction
+2024/07/08 20:46:33 Eviction
+2024/07/08 20:46:34 Eviction
+2024/07/08 20:46:35 Eviction
+2024/07/08 20:46:36 Eviction
+2024/07/08 20:46:37 Eviction
+2024/07/08 20:46:38 Eviction
+2024/07/08 20:46:39 Eviction
+2024/07/08 20:46:40 Eviction
+2024/07/08 20:46:41 Eviction
+2024/07/08 20:46:42 Eviction
+2024/07/08 20:46:43 Eviction
+2024/07/08 20:46:44 Eviction
+2024/07/08 20:46:45 Eviction
+2024/07/08 20:46:46 Eviction
+2024/07/08 20:46:47 Eviction
+2024/07/08 20:46:48 Eviction
+2024/07/08 20:46:49 Eviction
+2024/07/08 20:46:50 Eviction
+2024/07/08 20:46:51 Eviction
+2024/07/08 20:46:52 Eviction
+2024/07/08 20:46:53 Eviction
+2024/07/08 20:46:54 Eviction
+2024/07/08 20:46:55 Eviction
+2024/07/08 20:46:56 Eviction
+2024/07/08 20:46:57 Eviction
+2024/07/08 20:46:58 Eviction
+2024/07/08 20:46:59 Eviction
+2024/07/08 20:47:00 Eviction
+2024/07/08 20:47:01 Eviction
+2024/07/08 20:47:02 Eviction
+2024/07/08 20:47:03 Eviction
+2024/07/08 20:47:04 Eviction
+2024/07/08 20:47:05 Eviction
+2024/07/08 20:47:06 Eviction
+2024/07/08 20:47:07 Eviction
+2024/07/08 20:47:08 Eviction
+2024/07/08 20:47:09 Eviction
+2024/07/08 20:47:10 Eviction
+2024/07/08 20:47:11 Eviction
+2024/07/08 20:47:12 Eviction
+2024/07/08 20:47:13 Eviction
+2024/07/08 20:47:14 Eviction
+2024/07/08 20:47:15 Eviction
+2024/07/08 20:47:16 Eviction
+2024/07/08 20:47:17 Eviction
+2024/07/08 20:47:18 Eviction
+2024/07/08 20:47:19 Eviction
+2024/07/08 20:47:20 Eviction
+2024/07/08 20:47:21 Eviction
+2024/07/08 20:47:22 Eviction
+2024/07/08 20:47:23 Eviction
+2024/07/08 20:47:24 
+Caught SIGINT... Exiting
+2024/07/08 20:47:24 
+2024/07/08 20:47:24 Global metrics:
+2024/07/08 20:47:24 ---------------
+2024/07/08 20:47:24 Total packets processed: 14108
+2024/07/08 20:47:24 Total packets analyzed (TCP+UDP): 14074
+2024/07/08 20:47:24 Total TCP packets analyzed: 13573
+2024/07/08 20:47:24 Total UDP packets analyzed: 501
+2024/07/08 20:47:24 Total TCP flows analyzed: 391
+2024/07/08 20:47:24 Total UDP flows analyzed: 147
+2024/07/08 20:47:24 
+2024/07/08 20:47:24 Removing qdisc
+2024/07/08 20:47:24 Deleting handle
+2024/07/08 20:47:24 Closing eBPF object
+Command exited with non-zero status 1
+1.10user 6.89system 1:17.16elapsed 10%CPU (0avgtext+0avgdata 91904maxresident)k
+0inputs+10568outputs (34major+33836minor)pagefaults 0swaps

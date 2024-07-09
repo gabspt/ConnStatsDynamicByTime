@@ -1,0 +1,37 @@
+2024/07/08 22:10:21 Starting up the probe at interface enp0s8
+2024/07/08 22:10:21 Eviction
+2024/07/08 22:10:22 Eviction
+2024/07/08 22:10:22 Eviction
+2024/07/08 22:10:23 Eviction
+2024/07/08 22:10:23 Eviction
+2024/07/08 22:10:24 Eviction
+2024/07/08 22:10:24 Eviction
+2024/07/08 22:10:25 Eviction
+2024/07/08 22:10:25 Eviction
+2024/07/08 22:10:26 Eviction
+2024/07/08 22:10:26 Eviction
+2024/07/08 22:10:27 Eviction
+2024/07/08 22:10:27 Eviction
+2024/07/08 22:10:28 Eviction
+2024/07/08 22:10:28 Eviction
+2024/07/08 22:10:29 Eviction
+2024/07/08 22:10:29 Eviction
+2024/07/08 22:10:30 Eviction
+2024/07/08 22:10:30 
+Caught SIGINT... Exiting
+2024/07/08 22:10:30 
+2024/07/08 22:10:30 Global metrics:
+2024/07/08 22:10:30 ---------------
+2024/07/08 22:10:30 Total packets processed: 13735
+2024/07/08 22:10:30 Total packets analyzed (TCP+UDP): 13701
+2024/07/08 22:10:30 Total TCP packets analyzed: 13200
+2024/07/08 22:10:30 Total UDP packets analyzed: 501
+2024/07/08 22:10:30 Total TCP flows analyzed: 391
+2024/07/08 22:10:30 Total UDP flows analyzed: 147
+2024/07/08 22:10:30 
+2024/07/08 22:10:30 Removing qdisc
+2024/07/08 22:10:30 Deleting handle
+2024/07/08 22:10:30 Closing eBPF object
+Command exited with non-zero status 1
+0.85user 3.15system 0:10.90elapsed 36%CPU (0avgtext+0avgdata 88576maxresident)k
+0inputs+8880outputs (31major+32068minor)pagefaults 0swaps
